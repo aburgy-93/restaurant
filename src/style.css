@@ -142,20 +142,61 @@ html {
 }
 
 .sub-heading {
-  font-size: 3rem;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .resturant-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   background-color: rgba(0, 0, 0, 0.72);
+  padding: 2.4rem 3.2rem;
+  font-size: 2.4rem;
+  height: 25rem;
+}
+
+.resturant-info:first-child {
+  margin-right: 3rem;
+}
+
+.address-column,
+.hours-column {
+  display: flex;
+}
+
+.address-column {
+  margin-right: 3.2rem;
+}
+
+.icon {
+  margin-right: 1.2rem;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.6rem;
 }
 
 /* reusable styles */
-.btn {
-  /* padding: ; */
-  border-radius: 10px;
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 9px;
+
+  /*  Only necessary for .btn */
   border: none;
-  font-size: 1.8rem;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on origianl "State" */
+  transition: all 0.3s;
 }
