@@ -3,6 +3,8 @@ import { renderMarkupMenu } from "./pages/menuView";
 import { renderMarkupContact } from "./pages/contactView";
 import { render } from "./functions/render";
 import loadHome from "./pages/homeView";
+import loadMenu from "./pages/menuView";
+import loadContact from "./pages/contactView";
 
 // renderMarkupHome();
 
@@ -47,21 +49,24 @@ function createNav() {
   nav.classList.add("nav");
 
   const homeBtn = document.createElement("button");
+  homeBtn.classList.add("nav-link");
   homeBtn.textContent = "Home";
   homeBtn.addEventListener("click", function () {
-    console.log("Home clicked!");
+    loadHome();
   });
 
   const menuBtn = document.createElement("button");
+  menuBtn.classList.add("nav-link");
   menuBtn.textContent = "Menu";
   menuBtn.addEventListener("click", function () {
-    console.log("Menu clicked!");
+    loadMenu();
   });
 
   const contactBtn = document.createElement("button");
+  contactBtn.classList.add("nav-link");
   contactBtn.textContent = "Contact";
   contactBtn.addEventListener("click", function () {
-    console.log("Contact clicked!");
+    loadContact();
   });
 
   nav.appendChild(homeBtn);
