@@ -22,7 +22,7 @@ function renderRestaurantInfo() {
         <div class="address-column">
           <ion-icon class="icon" name="location-outline"></ion-icon>
           <div class="address">
-              2424 Highland Drive <br>Milwaukee, WI 53202</br> </p>
+              <p>2424 Highland Drive <br>Milwaukee, WI 53202</br> </p>
           </div>
       </div>
 

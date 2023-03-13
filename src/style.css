@@ -67,13 +67,19 @@ html {
   background-attachment: fixed;
   background-position: center;
   color: var(--primary-color);
-  /* make background image darker */
-  /* background-color: rgba(0, 0, 0, 0.72); */
+}
+
+html,
+body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #content {
-  display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
+  height: 100%;
 }
 
 .header {
@@ -146,6 +152,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .order {
@@ -201,6 +208,9 @@ html {
 /* Menu */
 
 .menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: #aa8c2c;
   color: black;
   height: 100%;
@@ -210,10 +220,20 @@ html {
 .menu-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  width: 70%;
   justify-items: center;
   /* Temporary */
   background-color: pink;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item > img {
+  width: calc(5rem + 8vw);
+  height: calc(5rem + 8vw);
 }
 
 .menu-item > h4 {
@@ -229,11 +249,34 @@ html {
   color: var(--primary-color);
 }
 
+/* Contact */
+
+.contact {
+  max-width: 700px;
+  padding: 4rem;
+  margin: 8rem 0;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.72);
+  border: 1px solid black;
+}
+
+.contact img {
+  max-height: 420px;
+  padding: 1rem;
+  opacity: 90%;
+}
+
 .footer {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   font-size: 1.6rem;
+  background-color: rgba(0, 0, 0, 0.72);
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
 }
 
 /* reusable styles */

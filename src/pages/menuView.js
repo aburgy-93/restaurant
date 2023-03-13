@@ -13,7 +13,7 @@ const renderMarkupMenu = function () {
 
   menu_container.innerHTML = `
     <div class="menu-item">
-      <img src="./images/hamburger.png" alt="" />
+      <img src="/src/images/png/hamburger.png" alt="" />
       <div class="item-content">
         <h4>Gold-Pickled Fowl Foot: <span>600 runes</span></h4>
         <ul class="ingredients">
@@ -25,7 +25,7 @@ const renderMarkupMenu = function () {
     </div>
 
     <div class="menu-item">
-      <img src="./images/hamburger.png" alt="" />
+      <img src="/src/images/png/hamburger.png" alt="" />
       <div class="item-content">
         <h4>Sleeping Pot: <span>1310 runes</span></h4>
         <ul class="ingredients">
@@ -37,7 +37,7 @@ const renderMarkupMenu = function () {
     </div>
 
     <div class="menu-item">
-      <img src="./images/hamburger.png" alt="" />
+      <img src="/src/images/png/hamburger.png" alt="" />
       <div class="item-content">
         <h4>Bewitching Branch: <span>1600 runes</span></h4>
         <ul class="ingredients">
@@ -48,7 +48,7 @@ const renderMarkupMenu = function () {
     </div>
 
     <div class="menu-item">
-      <img src="./images/hamburger.png" alt="" />
+      <img src="/src/images/png/hamburger.png" alt="" />
       <div class="item-content">
         <h4>Preserving Boluses: <span>200 runes</span></h4>
         <ul class="ingredients">
@@ -60,7 +60,7 @@ const renderMarkupMenu = function () {
     </div>
 
     <div class="menu-item">
-      <img src="./images/hamburger.png" alt="" />
+      <img src="/src/images/png/hamburger.png" alt="" />
       <div class="item-content">
         <h4>Fire Pot: <span>320 runes</span></h4>
         <ul class="ingredients">
@@ -72,7 +72,7 @@ const renderMarkupMenu = function () {
     </div>
 
     <div class="menu-item">
-      <img src="./images/hamburger.png" alt="" />
+      <img src="/src/images/png/hamburger.png" alt="" />
       <div class="item-content">
         <h4>Bloodboil Aromatic: <span>1130 runes</span></h4>
         <ul class="ingredients">
@@ -83,10 +83,6 @@ const renderMarkupMenu = function () {
         </ul>
       </div>
     </div>
-
-    
-
-  
   `;
 
   menu.appendChild(menu_container);

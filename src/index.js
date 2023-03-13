@@ -76,6 +76,17 @@ function createNav() {
   return nav;
 }
 
+function createFooter() {
+  const footer = document.createElement("footer");
+  footer.classList.add("footer");
+
+  footer.innerHTML = `
+    <p> &copy; Alex Burgy 2023</p>
+  `;
+
+  return footer;
+}
+
 function createMain() {
   const main = document.createElement("main");
   main.classList.add("main");
@@ -93,6 +104,7 @@ function init() {
   content.appendChild(createMain());
 
   // create footer, append to content
+  content.appendChild(createFooter());
 
   loadHome();
 }
